@@ -26,6 +26,7 @@ body {
   min-height: 100vh;
   font-size: 1.6rem;
   transform: rotate();
+  padding-top: -20px;
 }
 
 .hero h1 {
@@ -62,10 +63,6 @@ body {
   padding: 0rem 5rem;
 }
 
-.mynavbar .offcanvas {
-  height: 100vh;
-}
-
 .mynavbar .navbar-brand,
 .mynavbar .offcanvas-title {
   font-family: "Ephesis", cursive;
@@ -84,7 +81,6 @@ body {
   min-height: 100vh;
   margin-top: -5rem;
   color: #252525;
-  padding-top: 10rem;
 }
 
 .home h5 {
