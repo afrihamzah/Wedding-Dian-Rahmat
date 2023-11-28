@@ -122,7 +122,7 @@ body {
 }
 
 .info,
-.gifts {
+.rsvp {
   /* background-image: url(img/bg2opct.png); */
   background-color: #3f70581f;
   background-size: cover;
@@ -133,6 +133,7 @@ body {
 
 .info h2,
 .rsvp h2,
+.family h2,
 .gifts h2 {
   color: var(--hijau);
   font-family: "Ephesis", cursive;
@@ -148,10 +149,6 @@ body {
 .info a:hover {
   color: white;
   background-color: var(--hijau);
-}
-
-.info p {
-  font-size: 1.5rem;
 }
 
 .info .card {
@@ -185,11 +182,12 @@ body {
   padding: 1rem 2rem;
 }
 
-.mengundang ul {
+.family ul {
   list-style: none;
 }
 
-.rsvp {
+.family,
+.gifts {
   background-image: url(img/bg2opct.png);
   background-size: cover;
   color: #666;
@@ -219,6 +217,7 @@ body {
 
 .gifts img {
   width: 200px;
+  margin-left: 35px;
   margin-bottom: 1rem;
 }
 
@@ -322,7 +321,8 @@ footer a {
   .info p,
   .info .card-header,
   .rsvp p,
-  .mengundang h4 {
+  .gifts p,
+  .family h4 {
     font-size: 2rem;
   }
 
@@ -333,7 +333,7 @@ footer a {
   .rsvp input,
   .rsvp select,
   .rsvp button,
-  .mengundang ul {
+  .family li {
     font-size: 1.5rem;
   }
 }
