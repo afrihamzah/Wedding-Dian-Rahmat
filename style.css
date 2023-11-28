@@ -253,16 +253,12 @@ footer a {
   line-height: 0;
 }
 
-@keyframes rotating {
-  form {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+section {
+  overflow: hidden;
 }
 
 /* Media Query */
+
 /* Laptop */
 @media (max-width: 992px) {
   html {
@@ -291,10 +287,6 @@ footer a {
     text-transform: uppercase;
     font-size: 2rem;
     text-align: center;
-  }
-
-  .sticky-top {
-    overflow: hidden;
   }
 
   .info .card-body .pemisah {
