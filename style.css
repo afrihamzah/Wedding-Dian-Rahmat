@@ -10,22 +10,18 @@ body {
   font-family: "Cormorant Garamond", serif;
 }
 
-.hero::before {
-  content: "";
-  position: absolute;
+.hero {
+  position: relative;
   width: 100%;
   height: 100%;
   background-image: url(img/bg1.jpg);
-  background-color: white;
   background-size: cover;
   background-position: center;
-  z-index: -1;
 }
 
 .hero {
   min-height: 100vh;
   font-size: 1.6rem;
-  transform: rotate();
 }
 
 .hero h1 {
@@ -254,6 +250,10 @@ footer a {
   line-height: 0;
 }
 
+section {
+  overflow: hidden;
+}
+
 @keyframes rotating {
   form {
     transform: rotate(0);
@@ -301,10 +301,6 @@ footer a {
   .info .card-body .pemisah {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-  }
-
-  section {
-    overflow: auto;
   }
 }
 
