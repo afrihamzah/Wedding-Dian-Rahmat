@@ -307,3 +307,16 @@ section {
     width: 250px;
   }
 }
+
+/* 360 */
+
+@media (max-width: 320px) {
+  html {
+    font-size: 40%;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 28px;
+    margin: 3px;
+  }
+}
