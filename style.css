@@ -302,4 +302,8 @@ section {
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  .frame img {
+    width: 250px;
+  }
 }
