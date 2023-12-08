@@ -30,16 +30,57 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
     />
-
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="lightbox2/dist/css/lightbox.min.css" />
   </head>
   <body>
     <section
       id="hero"
       class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
     >
-      <main data-aos="zoom-in" data-aos-duration="1500">
-        <h4>The Wedding Ceremony Of</h4>
+      <div class="frame">
+        <img
+          src="img/frame-tl.png"
+          alt=""
+          class="position-absolute top-0 start-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-out"
+        />
+        <img
+          src="img/frame-tr.png"
+          alt=""
+          class="position-absolute top-0 end-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-out"
+        />
+        <img
+          src="img/frame-bl.png"
+          alt=""
+          class="position-absolute bottom-0 start-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-out"
+        />
+        <img
+          src="img/frame-br.png"
+          alt=""
+          class="position-absolute bottom-0 end-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-out"
+        />
+      </div>
+      <main
+        data-aos="zoom-in"
+        data-aos-duration="2000"
+        data-aos-easing="ease-in-out"
+      >
+        <p>The Wedding Ceremony Of</p>
         <h1>Dian & Rahmat</h1>
         <p>Akan melangsungkan resepsi pernikahan dalam:</p>
         <div class="simply-countdown mt-5"></div>
@@ -75,7 +116,7 @@
               <a class="nav-link" href="#family">Family</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#rsvp">RSVP</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#gifts">Gifts</a>
@@ -88,7 +129,7 @@
     <section id="home" class="home">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-md-8 text-center home-atas">
+          <div class="col-md-8 text-center mt-5">
             <h5 class="fw-bold" data-aos="fade-right" data-aos-duration="2000">
               Bismillahirrahmanirrahim
             </h5>
@@ -108,7 +149,7 @@
         </div>
 
         <div class="container text-center mempelai">
-          <div class="row">
+          <div class="row mb-5">
             <div
               class="col-8 offset-2"
               data-aos="fade-right"
@@ -292,7 +333,7 @@
                   </ul>
                 </div>
                 <div
-                  class="col-12 text-center mb-2 mt-3 fw-bold"
+                  class="col-12 text-center mb-2 mt-3 fw-bold mt-5"
                   data-aos="zoom-in-left"
                   data-aos-duration="2000"
                 >
@@ -343,72 +384,109 @@
       </div>
     </section>
 
-    <section id="rsvp" class="rsvp">
+    <section class="gallery" id="gallery">
       <div class="container">
         <div class="row justify-content-center">
           <div
-            class="col-md-8 col-10 text-center"
-            data-aos="zoom-in-right"
+            class="col-md-8 col-10 text-center mb-5"
+            data-aos="zoom-out"
+            data-aos-easing="ease-in-out"
             data-aos-duration="2000"
           >
-            <h2>Konfirmasi Kehadiran</h2>
-            <p>Isi form dibawah ini untuk konfirmasi kehadiran.</p>
+            <h2>Gallery Mempelai</h2>
           </div>
         </div>
 
         <div
-          class="container text-center"
-          data-aos="zoom-in-left"
-          data-aos-duration="2000"
+          class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-2 justify-content-center"
         >
-          <form
-            class="row"
-            method="POST"
-            action="https://script.google.com/macros/s/AKfycbzQVEAGQbDIHSYkCpokcvqCe1aJvbEc7GDHuPtwBOcgtVYXRbVqc4CMZqocER490GY3/exec"
-            id="my-form"
+          <div
+            class="col mt-4"
+            data-aos="fade-right"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="2000"
           >
-            <div class="col-6 offset-3">
-              <div class="mb-3">
-                <label for="nama" class="form-label">Nama</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="nama"
-                  name="nama"
-                  placeholder="Silahkan masukkan nama"
-                />
-              </div>
-            </div>
-
-            <div class="row justify-content-center" style="margin-left: 0px">
-              <div class="col-3">
-                <div class="mb-3">
-                  <label for="jumlah" class="form-label">Jumlah</label>
-                  <input
-                    type="number"
-                    class="form-control"
-                    id="jumah"
-                    name="jumlah"
-                    min="1"
-                    length="1"
-                    value="1"
-                  />
-                </div>
-              </div>
-              <div class="col-3">
-                <div class="mb-3">
-                  <label for="status" class="form-label">Konfirmasi</label>
-                  <select name="status" id="status" class="form-select">
-                    <option value="Hadir">Hadir</option>
-                    <option value="Tidak Hadir">Tidak Hadir</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 mt-5">
-              <button class="btn btn-primary">Kirim</button>
-            </div>
-          </form>
+            <a href="img/mempelai/1.jpg" data-lightbox="gallery">
+              <img
+                src="img/mempelai/thumbnail/1.jpg"
+                alt="Ami Reza 1"
+                class="img-fluid w-100 rounded"
+                data-lightbox="gallery"
+              />
+            </a>
+          </div>
+          <div
+            class="col mt-4"
+            data-aos="fade-left"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="2000"
+          >
+            <a href="img/mempelai/2.jpg" data-lightbox="gallery">
+              <img
+                src="img/mempelai/thumbnail/2.jpg"
+                alt="Ami Reza 2"
+                class="img-fluid w-100 rounded"
+                data-lightbox="gallery"
+              />
+            </a>
+          </div>
+          <div
+            class="col mt-4"
+            data-aos="fade-right"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="2000"
+          >
+            <a href="img/mempelai/3.jpg" data-lightbox="gallery">
+              <img
+                src="img/mempelai/thumbnail/3.jpg"
+                alt="Ami Reza 3"
+                class="img-fluid w-100 rounded"
+                data-lightbox="gallery"
+              />
+            </a>
+          </div>
+          <div
+            class="col mt-4"
+            data-aos="fade-left"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="2000"
+          >
+            <a href="img/mempelai/4.jpg" data-lightbox="gallery">
+              <img
+                src="img/mempelai/thumbnail/4.jpg"
+                alt="Ami Reza 4"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div
+            class="col mt-4"
+            data-aos="fade-right"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="2000"
+          >
+            <a href="img/mempelai/5.jpg" data-lightbox="gallery">
+              <img
+                src="img/mempelai/thumbnail/5.jpg"
+                alt="Ami Reza 5"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div
+            class="col mt-4"
+            data-aos="fade-left"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="2000"
+          >
+            <a href="img/mempelai/6.jpg" data-lightbox="gallery">
+              <img
+                src="img/mempelai/thumbnail/6.jpg"
+                alt="Ami Reza 6"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -420,7 +498,7 @@
             <h2 data-aos="zoom-in-down" data-aos-duration="2000">
               Kirim Hadiah
             </h2>
-            <p class="mb-4" data-aos="zoom-in-down" data-aos-duration="2000">
+            <p class="mb-5" data-aos="zoom-in-down" data-aos-duration="2000">
               Terima kasih atas doa dan restu yang telah anda berikan, jika anda
               ingin mengirimkan kado nikah, silahkan kirim dengan cara dibawah
               ini. Sebelumnya, kami mengucapkan banyak terima kasih.
@@ -448,7 +526,7 @@
         <div class="row">
           <div class="col text-center">
             <small class="block"
-              >&copy; 2024 Dian & Rahmat Wedding. All Right Reserved.</small
+              >&copy; 2023 Dian & Rahmat Wedding. All Right Reserved.</small
             >
             <small class="block"
               >Design by
@@ -476,6 +554,13 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+
+    <!-- jQuery CDN Link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- Lightbox JS -->
+    <script src="lightbox2/dist/js/lightbox.min.js"></script>
+    <!-- Custom js -->
+    <script src="script.js"></script>
 
     <script>
       simplyCountdown(".simply-countdown", {

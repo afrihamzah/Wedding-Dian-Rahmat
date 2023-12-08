@@ -14,44 +14,45 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: url(img/bg1.jpg);
+  background-image: url(img/bg.webp);
   background-size: cover;
   background-position: center;
-}
-
-.hero {
   min-height: 100vh;
   font-size: 1.6rem;
 }
 
 .hero h1 {
-  text-shadow: var(--shadow);
-  color: #252525;
-}
-
-.hero h4 {
-  color: #252525;
-}
-
-.hero h1 {
   font-family: "Ephesis", cursive;
   font-size: 6rem;
+  text-shadow: var(--shadow);
+  color: var(--hijau);
 }
 
 .hero p {
   font-size: 1.4rem;
   color: #252525;
+  padding: 15px;
 }
 
 .hero a {
-  color: var(--hijau);
-  background-color: white;
+  color: white;
+  background-color: var(--hijau);
   box-shadow: var(--shadow);
 }
 
 .hero a:hover {
-  background-color: var(--hijau);
-  color: white;
+  background-color: white;
+  color: var(--hijau);
+}
+
+.frame img {
+  width: 350px;
+}
+
+.simply-countdown > .simply-section {
+  background-color: #ffffff;
+  border: 2px solid var(--hijau);
+  color: var(--hijau);
 }
 
 .mynavbar {
@@ -59,12 +60,7 @@ body {
   padding: 0rem 5rem;
 }
 
-.mynavbar .offcanvas {
-  height: 100vh;
-}
-
-.mynavbar .navbar-brand,
-.mynavbar .offcanvas-title {
+.mynavbar .navbar-brand {
   font-family: "Ephesis", cursive;
   font-size: 3.2rem;
   font-weight: bold;
@@ -75,13 +71,21 @@ body {
   text-transform: uppercase;
 }
 
-.home {
-  background-image: url(img/bg2opct.png);
+.home,
+.info,
+.family,
+.gallery,
+.gifts {
+  background-image: url(img/bg.webp);
   background-size: cover;
+  background-position: center;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  position: relative;
   min-height: 100vh;
-  margin-top: -5rem;
-  color: #252525;
-  padding-top: 10rem;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .home h5 {
@@ -91,8 +95,7 @@ body {
 }
 
 .home p,
-.info p,
-.rsvp p {
+.info p {
   font-size: 1.3rem;
   margin-bottom: 3rem;
   margin-left: 1.5rem;
@@ -118,25 +121,15 @@ body {
   margin-bottom: 2rem;
 }
 
-.info,
-.rsvp {
-  /* background-image: url(img/bg2opct.png); */
-  background-image: url(img/Texture1.png);
-  background-color: #3f70581f;
-  background-size: cover;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-  color: #252525;
-}
-
 .info h2,
-.rsvp h2,
 .family h2,
+.gallery h2,
 .gifts h2 {
   color: var(--hijau);
   font-family: "Ephesis", cursive;
   font-size: 4rem;
   font-weight: bold;
+  margin-bottom: 15px;
 }
 
 .info a {
@@ -182,31 +175,6 @@ body {
 
 .family ul {
   list-style: none;
-}
-
-.family,
-.gifts {
-  background-image: url(img/bg2opct.png);
-  background-size: cover;
-  color: #252525;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-}
-
-.rsvp button {
-  background-color: var(--hijau);
-  color: white;
-  border: 1px solid var(--hijau);
-  padding: 5px 30px;
-  display: block;
-  margin: auto;
-  box-shadow: var(--shadow);
-}
-
-.rsvp button:hover {
-  background-color: white;
-  color: var(--hijau);
-  border: 1px solid white;
 }
 
 .gifts p {
@@ -272,10 +240,6 @@ section {
   .simply-countdown > .simply-section {
     padding: 60px;
   }
-
-  .home {
-    padding-top: 15rem;
-  }
 }
 
 /* Tablet */
@@ -323,7 +287,6 @@ section {
   .info p,
   .info .card-header,
   .info span,
-  .rsvp p,
   .gifts p,
   .family h4 {
     font-size: 2rem;
@@ -331,11 +294,12 @@ section {
 
   .info a,
   .info .btn,
-  .rsvp label,
-  .rsvp input,
-  .rsvp select,
-  .rsvp button,
   .family li {
     font-size: 1.5rem;
+  }
+
+  .gallery {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
