@@ -310,13 +310,24 @@ section {
 
 /* 360 */
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
   html {
     font-size: 40%;
   }
 
   .simply-countdown > .simply-section {
-    padding: 28px;
+    padding: 20px;
+    margin: 3px;
+  }
+}
+
+/* 200 */
+@media (max-width: 277px) {
+  html {
+    font-size: 30%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 10px;
     margin: 3px;
   }
 }
